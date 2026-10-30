@@ -1,0 +1,61 @@
+{
+  "split": "test",
+  "cap_tokens": 64,
+  "tokenizer": "distilbert-base-multilingual-cased",
+  "n": {
+    "en": 234,
+    "unknown": 74,
+    "vi": 482
+  },
+  "pct_over_cap": {
+    "en": 62.0,
+    "unknown": 59.5,
+    "vi": 66.8
+  },
+  "mean_frac_kept": {
+    "en": 0.66,
+    "unknown": 0.527,
+    "vi": 0.569
+  },
+  "median_frac_kept": {
+    "en": 0.762,
+    "unknown": 0.278,
+    "vi": 0.574
+  },
+  "median_tokens_per_char": {
+    "en": 0.3383,
+    "unknown": 0.4109,
+    "vi": 0.3617
+  },
+  "median_chars": {
+    "en": 250,
+    "unknown": 919,
+    "vi": 308
+  },
+  "tests_vi_vs_en": {
+    "pct_over_cap": {
+      "gap_pp": 4.8,
+      "fisher_p": 0.2103
+    },
+    "frac_kept": {
+      "mannwhitney_p": 0.0141
+    },
+    "tokens_per_char": {
+      "vi_over_en_pct": 6.9,
+      "mannwhitney_p": 0.000313
+    },
+    "n_chars": {
+      "mannwhitney_p": 0.1816
+    }
+  },
+  "holm_adjusted_p": {
+    "tokens_per_char": 0.00125,
+    "frac_kept": 0.0423,
+    "n_chars": 0.363,
+    "pct_over_cap": 0.363
+  },
+  "significant_after_holm": [
+    "frac_kept",
+    "tokens_per_char"
+  ]
+}
